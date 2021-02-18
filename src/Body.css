@@ -1,0 +1,39 @@
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.body_Card{
+    width: 22rem;
+    height: 13rem;
+    margin: 10px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.body_Card img{
+    width: 22rem;
+    height: 13rem;
+    object-fit: cover;
+    border-radius: 10px;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1),  rgba(0, 0, 0, 0));
+    margin-bottom: -40px;
+    z-index: 1;
+}
+
+.body_CardInfo{
+    transform: translateY(-10px);
+    color: #fff;
+    z-index: 2;
+}
+
+.body_CardInfo h5{
+    text-align: center;
+}
