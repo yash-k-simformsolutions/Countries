@@ -8,15 +8,14 @@ class Body extends Component{
             <div className="body">
                 {
                     this.props.data.map((country, index) => (
-                        <Link to={`/${country.name}`} onClick={() => {this.props.handleCountry(country.name)}}>
-                            <div className="body_Card" key={index}>
+                        <div className="body_Card" key={index}>
+                            <Link to={`/${country.name}`} onClick={() => {this.props.handleCountry(country.name)}}>
                                 <img src={country?.flag} alt={country?.name} />
                                 <div className="body_CardInfo">
                                     <h3>{country?.name}</h3>
-                                    <h5>{country?.capital}</h5>
                                 </div>
-                            </div>
-                        </Link>
+                            </Link>
+                        </div>
                     ))
                 }
             </div>

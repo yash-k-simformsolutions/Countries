@@ -1,14 +1,30 @@
 .header{
-    background-color: #023e8a;
-    color: #f0efeb;
-    padding: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex: 70% 30%;
+    justify-content: center;
+    flex-direction: column;
     position: sticky;
     top: 0;
     z-index: 5;
+}
+
+.header_Title{
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    transition: 0.2s;
+}
+
+.header a{
+    color: #2a52be;
+    text-decoration: none;
+}
+
+.header_subHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
 }
 
 .header_Search{
@@ -17,8 +33,8 @@
     justify-content: center;
     background-color: #fff;
     border-radius: 50px;
-    padding-right: 5px;
-    width: 18%;
+    width: 30rem;
+    box-shadow: 5px 5px 15px #4a4e69;
 }
 
 .header_Search input{
@@ -29,14 +45,33 @@
     outline: none;
     flex: 1;
     transition: 0.8s;
+    width: 100%;
+    color: #8594bd;
 }
 
 .header_Search input:focus{
-    background-color: #a0c4ff;
+    background-color: #8594bd;
     color: #fff;
 }
 
 .MuiSvgIcon-root{
-    font-size: 1.8rem !important;
+    font-size: 2rem !important;
     color: #000;
+    margin: 0 8px;
+}
+
+.header_Row{
+    background-color: #2a52be;
+}
+
+.header_Row a{
+    color: #fff;
+}
+
+.header_Row .header_Title{
+    padding: 0;
+}
+
+.header_Row .header_Search{
+    box-shadow: 15px 15px 45px #090a0c;
 }

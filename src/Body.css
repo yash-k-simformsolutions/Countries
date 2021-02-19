@@ -6,10 +6,14 @@
     margin-top: 2rem;
 }
 
+.body a{
+    text-decoration: none;
+}
+
 .body_Card{
-    width: 22rem;
-    height: 13rem;
-    margin: 10px;
+    width: 24rem;
+    height: 14rem;
+    margin: 15px;
     background-color: #000;
     display: flex;
     align-items: center;
@@ -19,12 +23,12 @@
 }
 
 .body_Card img{
-    width: 22rem;
-    height: 13rem;
+    width: 24rem;
+    height: 14rem;
     object-fit: cover;
     border-radius: 10px;
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1),  rgba(0, 0, 0, 0));
-    margin-bottom: -40px;
+    margin-bottom: -22px;
     z-index: 1;
 }
 
@@ -34,6 +38,6 @@
     z-index: 2;
 }
 
-.body_CardInfo h5{
+.body_CardInfo h3{
     text-align: center;
 }
